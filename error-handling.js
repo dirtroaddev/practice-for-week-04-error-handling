@@ -43,7 +43,6 @@ function greet(greeting) {
   console.log(greeting);
 }
 
-
 try {
   greet();
 } catch(e) {
