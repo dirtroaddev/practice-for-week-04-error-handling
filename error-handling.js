@@ -35,14 +35,16 @@ function sayName(name) {
 }
 // 3.
 function greet(greeting) {
-  try {
+  
     if (!greeting) {
       throw new Error("There was no greeting given.");
-    }
-  } catch(e) {
-
-  }
-
+       }
 
   console.log(greeting);
+}
+
+try {
+  greet();
+} catch(e) {
+  console.log("Hello World!");
 }
